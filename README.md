@@ -4,7 +4,7 @@ First Stable Release
 
 Developed by Shouvik Bajpayee && Sayak Mukhopadhyay from Team GangPayee (c) 2021
 
-## Examples of How To Use (First Stable Version)
+## Example of How To Use (First Stable Version)
 
 Import the package
 
