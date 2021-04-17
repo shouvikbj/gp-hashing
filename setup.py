@@ -24,7 +24,7 @@ setup(
     install_requires=[],
     keywords=['python', 'hashing', 'gp-hashing', 'generate hash', 'easy hashing'],
     classifiers=[
-        "Development Status :: First Stable Release",
+        "Development Status :: 1 - First Stable Release",
         "Intended Audience :: Python Programmers",
         "Programming Language :: Python :: 3",
         "Operating System :: Unix",
