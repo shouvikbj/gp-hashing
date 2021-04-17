@@ -123,5 +123,3 @@ def generateHash(string):
         res += alphas[first_step_digit_sum % 26]
 
     return res
-
-print(generateHash("a simple string"))
