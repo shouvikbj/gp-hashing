@@ -13,7 +13,7 @@ LONG_DESCRIPTION = 'A package that allows to generate Hashed Strings in the easi
 
 # Setting up
 setup(
-    name="gp-hashing",
+    name="gp_hashing",
     version=VERSION,
     author="Shouvik Bajpayee & Sayak Mukhopadhyay",
     author_email="<bajpayeeshouvik@gmail.com>",
@@ -24,8 +24,7 @@ setup(
     install_requires=[],
     keywords=['python', 'hashing', 'gp-hashing', 'generate hash', 'easy hashing'],
     classifiers=[
-        "Development Status :: 1 - First Stable Release",
-        "Intended Audience :: Python Programmers",
+        "Intended Audience :: Developers",
         "Programming Language :: Python :: 3",
         "Operating System :: Unix",
         "Operating System :: MacOS :: MacOS X",
