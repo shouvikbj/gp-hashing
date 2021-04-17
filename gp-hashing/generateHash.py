@@ -85,27 +85,20 @@ alphas = [
     "z",
 ]
 
-special_characters = """'`"!@#$%^&*(){}[]-+?_=,<>/"`'"""
-# print(len(fibonacci))
-
-password1 = "az@b{ca"
-
-password2 = "az@b{ca"
-
+special_characters = """'`"!@#$%^&* (){}[]-+?_=,<>/"`'"""
 
 def getSum(n):
-
     sum = 0
     for digit in str(n):
         sum += int(digit)
     return sum
 
 
-def generateHash(password):
-    password = password.lower()
-    password = password[::-1]
+def generateHash(string):
+    string = string.lower()
+    string = string[::-1]
     new_password = ""
-    for i in password:
+    for i in string:
         if i.isdigit():
             new_password += alphas[int(i)]
         elif i in special_characters:
@@ -113,33 +106,22 @@ def generateHash(password):
         else:
             new_password += i
     password_asciis = []
-    # digit_sums = []
 
     for i in new_password:
         password_asciis.append(ord(i) - 97)
-    # password_asciis.reverse()
-    # print(password_asciis)
-    res1 = ""
+    res = ""
 
     for i in range(len(password_asciis)):
         first_step = str(
             (int(str(primes[password_asciis[i]]) + str(fibonacci[password_asciis[i]])))
             ** 2
         )
-        res1 += password[i]
+        res += string[i]
         # res1 += first_step
         first_step_digit_sum = getSum(int(first_step))
-        res1 += str(first_step_digit_sum)
-        res1 += alphas[first_step_digit_sum % 26]
+        res += str(first_step_digit_sum)
+        res += alphas[first_step_digit_sum % 26]
 
-    print(res1)
-    return res1
+    return res
 
-
-hash1 = generateHash(password1)
-hash2 = generateHash(password2)
-
-if hash1 == hash2:
-    print("Success")
-else:
-    print("Tora duti moha gandu!!!")
+print(generateHash("a simple string"))

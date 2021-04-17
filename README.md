@@ -1,40 +1,32 @@
-# vidstream
+# gp-hashing
 
-Under construction! Not ready for use yet! Currently experimenting and planning!
+First Stable Release
 
-Developed by Florian Dedov from NeuralNine (c) 2020
+Developed by Shouvik Bajpayee && Sayak Mukhopadhyay from Team GangPayee (c) 2021
 
-## Examples of How To Use (Buggy Alpha Version)
+## Examples of How To Use (First Stable Version)
 
-Creating A Server
-
-```python
-from vidstream import StreamingServer
-
-server = StreamingServer('127.0.0.1', 9999)
-server.start_server()
-
-# Other Code
-
-# When You Are Done
-server.stop_server()
-```
-
-Creating A Client
+Import the package
 
 ```python
-from vidstream import CameraClient
-from vidstream import VideoClient
-from vidstream import ScreenShareClient
+from gp-hashing import generateHash
 
-# Choose One
-client1 = CameraClient('127.0.0.1', 9999)
-client2 = VideoClient('127.0.0.1', 9999, 'video.mp4')
-client3 = ScreenShareClient('127.0.0.1', 9999)
-
-client1.start_stream()
-client2.start_stream()
-client3.start_stream()
 ```
 
-Check out: https://www.youtube.com/c/NeuralNine
+Generating Hashed String
+
+```python
+from gp-hashing import generateHash
+
+normal_string = "a simple string"
+hashed_string = generateHash(normal_string)
+
+print(hashed_string)
+
+```
+
+Output
+
+```python
+g36kn49xi36kr64mt76ys63l 36ke54cl45tp54cm37li36ks63l 36ka16q
+```
