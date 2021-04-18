@@ -2,21 +2,21 @@
 
 First Stable Release
 
-Developed by Shouvik Bajpayee && Sayak Mukhopadhyay from Team GangPayee (c) 2021
+Developed by Sayak Mukhopadhyay && Shouvik Bajpayee from Team GangPayee (c) 2021
 
 ## Example of How To Use (First Stable Version)
 
 Import the package
 
 ```python
-from gp-hashing import generateHash
+from gp_hashing.generateHash import generateHash
 
 ```
 
 Generating Hashed String
 
 ```python
-from gp-hashing import generateHash
+from gp_hashing.generateHash import generateHash
 
 normal_string = "a simple string"
 hashed_string = generateHash(normal_string)
